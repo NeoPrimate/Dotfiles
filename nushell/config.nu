@@ -1,3 +1,7 @@
+if "ZELLIJ" not-in $env {
+    zellij
+}
+
 def --env y [...args] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
 	^yazi ...$args --cwd-file $tmp
