@@ -1,5 +1,3 @@
-$env.config.show_banner = false
-
 def --env y [...args] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
 	^yazi ...$args --cwd-file $tmp
@@ -17,3 +15,5 @@ mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
 alias dev = zellij action new-tab --layout dev
+
+$env.config.show_banner = false

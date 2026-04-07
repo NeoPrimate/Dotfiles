@@ -1,3 +1,9 @@
+# aerospace enable off    # disable
+# aerospace enable on     # re-enable
+# aerospace enable toggle # toggle
+# open -a AeroSpace
+
+
 # Place a copy of this config to ~/.aerospace.toml
 # After that, you can edit ~/.aerospace.toml to your liking
 
