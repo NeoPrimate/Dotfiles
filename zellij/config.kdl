@@ -35,10 +35,12 @@ mouse_mode true
 simplified_ui true
 
 keybinds {
-    unbind "Alt Left"
-    unbind "Alt Right"
-    unbind "Alt Up"
-    unbind "Alt Down"
+    shared {
+        unbind "Alt f"
+        bind "Ctrl h" { MoveFocus "Left"; }
+        bind "Ctrl l" { MoveFocus "Right"; }
+        bind "Ctrl f" { ToggleFocusFullscreen; }
+    }
 }
 
 default_shell "/opt/homebrew/bin/nu"
