@@ -1,0 +1,21 @@
+layout {
+    pane split_direction="vertical" {
+        pane {
+            cwd "/Users/vb/Documents/AIChat/"
+            command "zsh"
+            args "-c" "aichat -- --file chat_history.txt"
+        }
+        pane {
+            cwd "/Users/vb/Documents/AIChat/"
+            command "zsh"
+            args "-c" "hx chat_history.txt"
+        }
+    }
+
+    floating_panes {
+        pane {
+            command "zsh"
+            args "-c" "ollama serve"
+        }
+    }
+}

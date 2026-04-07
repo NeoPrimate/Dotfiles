@@ -1,0 +1,2 @@
+# .dotter/local.toml
+packages = ["default"]

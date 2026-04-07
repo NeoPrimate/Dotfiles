@@ -1,0 +1,10 @@
+# .dotter/global.toml
+[default.files]
+"alacritty" = "~/.config/alacritty"
+"aerospace.toml" = "~/.config/aerospace/aerospace.toml"
+"helix" = "~/.config/helix"
+"starship.toml" = "~/.config/starship.toml"
+"yazi" = "~/.config/yazi"
+"zed" = "~/.config/zed"
+"zellij" = "~/.config/zellij"
+"zshrc" = "~/.zshrc"

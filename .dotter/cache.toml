@@ -1,0 +1,18 @@
+[symlinks]
+"aerospace.toml" = "/Users/vb/.config/aerospace/aerospace.toml"
+"alacritty/alacritty.toml" = "/Users/vb/.config/alacritty/alacritty.toml"
+"alacritty/themes/catppuccin_macchiato.toml" = "/Users/vb/.config/alacritty/themes/catppuccin_macchiato.toml"
+"alacritty/themes/tokyo_night_storm.toml" = "/Users/vb/.config/alacritty/themes/tokyo_night_storm.toml"
+"helix/config.toml" = "/Users/vb/.config/helix/config.toml"
+"helix/languages.toml" = "/Users/vb/.config/helix/languages.toml"
+"helix/themes/catppuccin_macchiato.toml" = "/Users/vb/.config/helix/themes/catppuccin_macchiato.toml"
+"starship.toml" = "/Users/vb/.config/starship.toml"
+"yazi/yazi.toml" = "/Users/vb/.config/yazi/yazi.toml"
+"zed/settings.json" = "/Users/vb/.config/zed/settings.json"
+"zed/tasks.json" = "/Users/vb/.config/zed/tasks.json"
+"zellij/config.kdl" = "/Users/vb/.config/zellij/config.kdl"
+"zellij/layouts/aichat.kdl" = "/Users/vb/.config/zellij/layouts/aichat.kdl"
+"zellij/layouts/default.kdl" = "/Users/vb/.config/zellij/layouts/default.kdl"
+zshrc = "/Users/vb/.zshrc"
+
+[templates]

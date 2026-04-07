@@ -1,0 +1,36 @@
+import = [
+   # "~/.config/alacritty/themes/tokyo-night-storm.toml",
+   "~/.config/alacritty/themes/catppuccin_macchiato.toml",
+]
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+offset.x = 0
+offset.y = 12
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[selection]
+save_to_clipboard = true
+
+[window]
+# decorations = "Transparent"
+startup_mode = "Maximized"
+dynamic_title = false
+title = ""
+# blur = true
+# opacity = 0.1
+
+# [window.padding]
+# x = 10
+# y = 10
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

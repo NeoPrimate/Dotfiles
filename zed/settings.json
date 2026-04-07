@@ -1,0 +1,85 @@
+{
+  "agent_servers": {
+    "claude-acp": {
+      "favorite_config_option_values": {
+        "model": [
+          "default"
+        ]
+      },
+      "type": "registry"
+    }
+  },
+  "agent": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-6-1m-context-thinking-latest",
+      "enable_thinking": true
+    },
+    "dock": "left",
+    // "inline_assistant_model": {
+    //   "provider": "ollama",
+    //   "model": "llama3.1:latest",
+    // },
+  },
+  "theme": "Catppuccin Macchiato - No Italics",
+  "ui_font_size": 14,
+  "buffer_font_size": 12,
+  "buffer_line_height": {
+    "custom": 1.7,
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "useParameterNames": true,
+            "enable": "skip_trivial",
+          },
+          "closureReturnTypeHints": {
+            "enable": "always",
+          },
+          "rust": {
+            "analyzerTargetDir": true,
+          },
+        },
+      },
+    },
+    "tinymist": {
+      "settings": {
+        "exportPdf": "onType",
+        "outputPath": "$root/$name",
+      },
+    },
+    "cargo-appraiser": {
+      // Pin to a specific version (optional)
+      "settings": {
+        "version": "0.3.0",
+      },
+      "initialization_options": {
+        // See upstream docs for all options
+      },
+    },
+  },
+  "tab_bar": {
+    "show": false,
+    "show_nav_history_buttons": true,
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+  },
+  "show_call_status_icon": false,
+  // "features": {
+  //   "copilot": false
+  // },
+  "project_panel": {
+    "dock": "right",
+  },
+  "format_on_save": "on",
+  // "autosave": {
+  //   "after_delay": {
+  //     "milliseconds": 10
+  //   }
+  // }
+}
