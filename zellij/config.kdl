@@ -40,3 +40,5 @@ keybinds {
     unbind "Alt Up"
     unbind "Alt Down"
 }
+
+default_shell "/opt/homebrew/bin/nu"

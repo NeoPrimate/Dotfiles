@@ -1,8 +1,8 @@
-# .dotter/global.toml
 [default.files]
 "alacritty" = "~/.config/alacritty"
 "aerospace.toml" = "~/.config/aerospace/aerospace.toml"
 "helix" = "~/.config/helix"
+"nushell" = "~/.config/nushell"
 "starship.toml" = "~/.config/starship.toml"
 "yazi" = "~/.config/yazi"
 "zed" = "~/.config/zed"

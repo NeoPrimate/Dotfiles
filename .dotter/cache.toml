@@ -6,6 +6,8 @@
 "helix/config.toml" = "/Users/vb/.config/helix/config.toml"
 "helix/languages.toml" = "/Users/vb/.config/helix/languages.toml"
 "helix/themes/catppuccin_macchiato.toml" = "/Users/vb/.config/helix/themes/catppuccin_macchiato.toml"
+"nushell/config.nu" = "/Users/vb/.config/nushell/config.nu"
+"nushell/env.nu" = "/Users/vb/.config/nushell/env.nu"
 "starship.toml" = "/Users/vb/.config/starship.toml"
 "yazi/yazi.toml" = "/Users/vb/.config/yazi/yazi.toml"
 "zed/settings.json" = "/Users/vb/.config/zed/settings.json"
