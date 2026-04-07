@@ -36,5 +36,5 @@ key = "Return"
 mods = "Shift"
 chars = "\u001B\r"
 
-[shell]
-program = "/opt/homebrew/bin/nu"
+[terminal]
+shell.program = "/opt/homebrew/bin/nu"
