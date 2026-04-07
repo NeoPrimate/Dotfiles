@@ -1,7 +1,3 @@
-alias cd = z
-alias ls = eza
-alias cat = bat
-
 $env.config.show_banner = false
 
 def --env y [...args] {
@@ -19,3 +15,7 @@ zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+
+alias cd = z
+alias ls = eza
+alias cat = bat
