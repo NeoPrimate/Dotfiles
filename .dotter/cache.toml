@@ -13,8 +13,8 @@
 "zed/settings.json" = "/Users/vb/.config/zed/settings.json"
 "zed/tasks.json" = "/Users/vb/.config/zed/tasks.json"
 "zellij/config.kdl" = "/Users/vb/.config/zellij/config.kdl"
-"zellij/layouts/aichat.kdl" = "/Users/vb/.config/zellij/layouts/aichat.kdl"
 "zellij/layouts/default.kdl" = "/Users/vb/.config/zellij/layouts/default.kdl"
+"zellij/layouts/rust-dev.kdl" = "/Users/vb/.config/zellij/layouts/rust-dev.kdl"
 zshrc = "/Users/vb/.zshrc"
 
 [templates]

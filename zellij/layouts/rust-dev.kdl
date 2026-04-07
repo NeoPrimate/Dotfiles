@@ -1,0 +1,9 @@
+layout {
+    pane split_direction="vertical" {
+        pane command="hx" {
+            args "."
+        }
+        pane command="claude" {
+        }
+    }
+}
