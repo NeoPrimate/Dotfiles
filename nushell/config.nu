@@ -1,3 +1,7 @@
+alias cd = z
+alias ls = eza
+alias cat = bat
+
 $env.config.show_banner = false
 
 def --env y [...args] {
