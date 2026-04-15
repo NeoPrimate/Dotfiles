@@ -19,18 +19,6 @@ style = "Bold"
 [selection]
 save_to_clipboard = true
 
-[window]
-# decorations = "Transparent"
-startup_mode = "Maximized"
-dynamic_title = false
-title = ""
-# blur = true
-# opacity = 0.1
-
-# [window.padding]
-# x = 10
-# y = 10
-
 [[keyboard.bindings]]
 key = "Return"
 mods = "Shift"
@@ -38,3 +26,15 @@ chars = "\u001B\r"
 
 [terminal]
 shell.program = "/opt/homebrew/bin/nu"
+
+[window]
+opacity = 0.75
+blur = true
+decorations = "Transparent"
+startup_mode = "Windowed"
+dynamic_title = false
+title = ""
+
+[window.padding]
+x = 10
+y = 40
