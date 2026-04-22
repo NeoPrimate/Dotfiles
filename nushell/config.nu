@@ -12,6 +12,16 @@ def --env y [...args] {
 	rm -fp $tmp
 }
 
+def "typst-view" [file: path] {
+    let pdf = ($file | path parse | update extension "pdf" | path join)
+    typst compile $file
+    if ($env.LAST_EXIT_CODE == 0) {
+        mupdf $pdf &
+    } else {
+        osascript -e 'display notification "Typst compilation failed" with title "Typst Error"'
+    }
+}
+
 mkdir ($nu.data-dir | path join "vendor/autoload")
 zoxide init nushell | save -f ($nu.data-dir | path join "vendor/autoload/zoxide.nu")
 
