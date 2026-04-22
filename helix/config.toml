@@ -36,7 +36,7 @@ q = ":reflow"
 # q = ":quit"
 # w = ":write"
 H = ":toggle lsp.display-inlay-hints"
-t = { v = ":sh /Users/vb/bin/typst-view %{buffer_name}" }
+t = { v = ":sh open http://127.0.0.1:23635" }
 
 [keys.select]
 y = ["yank", ":clipboard-yank"]
