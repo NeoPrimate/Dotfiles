@@ -1,10 +1,8 @@
 [[language]]
 name = "rust"
 auto-format = true
-
 [language-server.rust-analyzer.config.check]
 command = "clippy"
-
 [language-server.rust-analyzer.config.cargo]
 features = "all"
 
@@ -24,4 +22,5 @@ config = { exportPdf = "onType", outputPath = "$root/target/$dir/$name", preview
 
 [[language]]
 name = "typst"
+roots = ["typst.toml", ".git"]
 language-servers = ["tinymist"]
