@@ -22,5 +22,4 @@ config = { exportPdf = "onType", outputPath = "$root/target/$dir/$name", preview
 
 [[language]]
 name = "typst"
-roots = ["typst.toml", ".git"]
 language-servers = ["tinymist"]
