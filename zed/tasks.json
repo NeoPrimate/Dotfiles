@@ -1,17 +1,8 @@
 [
   {
-    "label": "Start Typst Watch",
-    "command": "sh",
-    "args": [
-      "-c",
-      "pkill -f 'typst watch.*$ZED_FILENAME' 2>/dev/null; typst watch '$ZED_FILE' --root='$ZED_WORKTREE_ROOT'"
-    ],
-    "use_new_terminal": true
+    "label": "Tinymist: Web Preview",
+    "command": "open -u http://127.0.0.1:23625; tinymist preview --no-open \"$ZED_FILE\" --root \"$ZED_WORKTREE_ROOT\"",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
   },
-  {
-    "label": "Open PDF in Skim",
-    "command": "open",
-    "args": ["-a", "Skim", "$ZED_DIRNAME/$ZED_STEM.pdf"],
-    "use_new_terminal": false
-  }
 ]

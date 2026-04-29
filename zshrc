@@ -10,7 +10,7 @@ if [[ -z "$ZED_TERM" && "$TERM_PROGRAM" != "zed" ]]; then
     eval "$(zellij setup --generate-auto-start zsh)"
 fi
 
-// alias ls="eza -lh --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions" # --sort=modified -lh
+# alias ls="eza -lh --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions" # --sort=modified -lh
 alias ..="cd .."
 
 alias cqlsh=/Users/vb/Library/Python/3.9/bin/cqlsh

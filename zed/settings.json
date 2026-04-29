@@ -1,22 +1,29 @@
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "agent_servers": {
     "gemini": {
-      "type": "registry"
+      "type": "registry",
     },
     "claude-acp": {
       "favorite_config_option_values": {
-        "model": [
-          "default"
-        ]
+        "model": ["default"],
       },
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "agent": {
     "default_model": {
       "provider": "anthropic",
       "model": "claude-opus-4-6-1m-context-thinking-latest",
-      "enable_thinking": true
+      "enable_thinking": true,
     },
     "dock": "left",
     // "inline_assistant_model": {
