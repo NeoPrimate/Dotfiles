@@ -5,4 +5,6 @@ $env.PATH = (
     | uniq
 )
 
+$env.PATH = ($env.PATH | append $"($env.HOME)/.cargo/bin")
+
 $env.ENABLE_CLAUDEAI_MCP_SERVERS = "false"
