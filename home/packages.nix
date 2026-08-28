@@ -24,6 +24,13 @@
     typst       # typesetting system
     elan        # lean toolchain manager (lean, lake via elan default stable)
 
+    # Audio
+    # liblo + pkg-config: needed so `uv tool install` can build pyliblo3,
+    # Vortex's OSC bridge to SuperDirt (see darwin/common.nix's supercollider
+    # cask). Vortex itself isn't in nixpkgs; installed via uv, not here.
+    liblo
+    pkg-config
+
     # GUI
     alacritty
     zed-editor

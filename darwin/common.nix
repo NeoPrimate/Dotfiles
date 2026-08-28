@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
   # ---- System ----
   nixpkgs.hostPlatform = "aarch64-darwin";
   system.stateVersion = 6;
@@ -37,6 +37,16 @@
     extraPackages = with pkgs; [ aerospace sketchybar-app-font jq ];
   };
 
+  # Guard against the /nix mount race on boot (see org.nixos.activate-system's
+  # own use of wait4path) — without this, a slow post-update first boot can
+  # leave the bar's LaunchAgent permanently stuck (single failed spawn, never
+  # retried) until it's manually kickstarted.
+  launchd.user.agents.sketchybar.serviceConfig.ProgramArguments =
+    lib.mkForce [
+      "/bin/sh" "-c"
+      "/bin/wait4path /nix/store && exec ${pkgs.sketchybar}/bin/sketchybar"
+    ];
+
   # ---- Homebrew ----
   # Brew itself must already be installed (it is). This declares the
   # minimal set of brew packages nix-darwin will keep installed.
@@ -54,6 +64,9 @@
       "cleanmymac"
       "karabiner-elements"
       "ghostty"
+      # supercollider: nixpkgs package is Linux-only (meta.platforms); needed
+      # as the synth engine behind Vortex (see home/packages.nix's liblo).
+      "supercollider"
     ];
   };
 
